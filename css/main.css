@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, blockquote {
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
+
+
+.container {
+    text-align: center;
+    padding: .8em 1.2em;
+}
+
+.blue-container {
+    /* position: absolute;
+    left: 0px;
+    right: 0px; */
+    background: #00C2FF;
+    width: 100%;
+    color: white;
+    transform: skewY(-2deg);
+    border-top-left-radius: 40px;
+    padding-top: 2em;
+    /* padding-bottom: 2em; */
+
+
+}
+
+.blue-container ul{
+    transform: skewY(2deg);
+}
+
+.blue-container .container ul li img {
+    width: 4em;
+}
+
+.blue-container .container ul li {
+    padding-bottom: 3.8em;
+}
+
+
+
+.blue-container:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -39px;
+    right: 0px;
+    background: #00C2FF;
+    /* border: solid; */
+    z-index: -2;
+}
+
+.blue-container::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    top: -80px;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
+
+}
+
+.logo {
+    width: 130px;
+}
+
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nav-btn {
+    cursor: pointer;
+    width: 25px;
+    margin-top: 8px;
+}
+
+nav {
+    /* display: none; */
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    margin-top: 0px;
+    height: 100%;
+    width:9em;
+    background-color: brown;
+    z-index: 1;
+}
+
+nav.hide-mobile{
+    display: none !important;
+}
+
+/* header .container {
+    display: flex;
+    flex-direction: row;
+} */
+
+
+
+nav .container {
+    background-color: pink;
+    position: absolute;
+    width: 100%;
+    margin-left: 0px;
+}
+
+.links-container {
+    text-align: left;
+}
+
+nav .container .links-container ul li {
+    list-style: none;
+    text-align: left;
+    padding: 3px 0px 3px;
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+
+img.hide-mobile{
+    display: none;
+}
+
+.blue-container .container ul {
+    list-style: none;
+    /* display: block; */
+    /* border: solid; */
+}
+
+
+
+section {
+   
+    padding-bottom: 5.5em;
+}
+
+section img {
+    position: relative;
+    top: -2.3em;
+    /* margin-bottom: -14em; */
+}
+
+section h1 {
+    position: relative;
+    top: -1.6em;
+    margin-bottom: -1em;
+
+}
+
+.server {
+    width: 70%;
+    margin: 2em auto 2em 25%;
+}
+
+
+.gray-container {
+    background: #F6F6F6;
+    padding: 4em 0 2em;
+    margin-top: -3%;
+    /* border: solid; */
+
+}
+
+.gray-container ul {
+    list-style: none;
+}
+
+.gray-container ul li {
+    padding: 0;
+    margin: 0;
+    /* border: solid; */
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    font-weight: bold;
+    color: #00C2FF;
+}
+
+
+
+.cta {
+    background: #00CC80;
+    width: calc(100% - 1em);
+    display: block;
+    color: #fff;
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+}
+
+footer {
+    width: 100%;
+    background: #3D444A;
+    color: #fff;
+    padding: 3em 0;
+    border-top-right-radius: 40px;
+    transform: skewY(2deg);
+}
+
+
+footer .footer-container {
+    transform: skewY(-2deg)
+}
+
+
+footer:before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -39px;
+    left: 0px;
+    background: #3D444A;
+    z-index: -1;
+}
+
+footer:after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: -80px;
+    left: 0px;
+    background: white;
+    border-radius: 40px;
+    /* z-index: -2; */
+}
+
+.gray-container ul li:first-child {
+    margin-bottom: 2em;
+}
+
+ul.footer-links  li{
+    display: inline-block;
+}
+
+ul.footer-links {
+    margin: 0;
+    padding: 0;
+}
+
+ul.footer-links li a {
+    color: #9D9D9D;
+    font-size: .8em;
+}
+
+
+.footer {
+    padding-top: .8em;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    
+    header {
+        /* border: solid; */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        /* display: flex;
+        flex-direction: row; */
+    }
+
+
+    .server {
+        width: 50%;
+        margin-left: 26%;
+        padding-bottom: 2.2em;
+        padding-top: 1em;
+    }
+    
+    h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .subhead {
+        font-size: 1.4em;
+        margin-bottom: 12%;
+    }
+
+    .blue-container {
+        margin: 0;
+    }
+
+    .blue-container img {
+        width: 15%;
+    }
+
+    .blue-container ul li:nth-child(3) img {
+        width: 15%;
+        margin-top: -6px;
+    }
+
+    .blue-container .container ul {
+        display: flex;
+        align-content: space-between;
+
+    }
+
+    .gray-container ul {
+        display: flex;
+    }
+
+
+
+    
+
+}
+
+@media only screen and (min-width: 800px){
+    
+    .blue-container ul li:nth-child(3) img {
+        width: 12%;
+        margin-top: -6px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+    
+   .container {
+    width: 80%;
+    margin: auto 7% auto ;
+
+   }
+   
+   header div.container {
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+   }
+   #nav-close.hide-desktop {
+       display: none;
+   }
+
+    nav.show-desktop {
+        display: inherit !important;
+        position: inherit;
+        right: inherit;
+        top: inherit;
+        margin-top: inherit;
+        height: inherit;
+        width:26em;
+        background-color: inherit;
+        z-index: inherit;
+    }
+
+
+    
+    
+
+    
+    nav .container  {
+        position: inherit;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        background-color: inherit;
+        
+        
+    }
+    
+    .links-container {
+        width: 100%;
+        
+    }
+    
+    nav .container .links-container ul {
+        display: flex;
+        justify-content: space-between;
+        padding:0;
+    }
+
+
+    nav .container .links-container ul li {
+        list-style: none;
+        text-align: left;
+        padding: 0;
+        cursor: pointer;
+        margin: 0;
+    }
+ 
+    
+    .nav-btn.hide-desktop {
+        display: none;
+    }
+
+    .logo {
+        padding: 0.7em;
+    }
+    
+   
+    .blue-container ul li img {
+        width: 20% !important ;
+    }
+    
+    .blue-container ul li:nth-child(3) img {
+        width: 11% !important ;
+        margin-top: -6px;
+    }
+
+    
+    p, blockquote {
+        font-size: .9em;
+        line-height: 1.6em;
+        margin: 1em auto auto 2.3em;
+    }
+
+    blockquote {
+        margin: 1.2em 4em !important;
+    }
+
+    .cta {
+        width: 50%;
+    }
+
+    .footer-container p.address {
+        padding: 0;
+        margin: 0;
+    }
+
+    img.scroll.show-desktop {
+        display: inherit;
+        padding: 2.3em 50%;
+        width: 30px;
+    
+    }
+
+    .scroll {
+        width: 30px;
+        animation: move 1s infinite alternate;
+    }
+
+    @keyframes move {
+        from {
+            transform: translateY(0px);
+        }
+        to {
+            transform: translateY(20px);
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    
+    .server{
+        width: 40%;
+    }
+   
+    .blue-container div.container, .gray-container div.container {
+        margin-top: 4em;
+        margin-bottom:  auto;
+    }
+   
+    .blue-container ul li img {
+        width: 15% !important ;
+    }
+    
+    .blue-container ul li:nth-child(3) img {
+        width: 8% !important ;
+        margin-top: -6px;
+    }
+
+    .blue-container ul li p {
+        margin: .8em;
+    }
+
+
+    
+    .blue-container p, .blue-container blockquote, .gray-container p, .gray-container blockquote {
+        font-size: 1.3em;
+        line-height: 1.6em;
+        margin: 1em auto auto 2.3em;
+    }
+
+    blockquote {
+        margin: 1.2em 4em !important;
+    }
+
+    .cta {
+        width: 50%;
+    }
+
+    .footer-container p.address {
+        padding: 0;
+        margin: 0;
+    }
+
+    img.scroll.show-desktop {
+        display: inherit;
+        padding: 2.3em 50%;
+        width: 30px;
+    
+    }
+
+    .scroll {
+        width: 30px;
+        animation: move 1s infinite alternate;
+    }
+
+    @keyframes move {
+        from {
+            transform: translateY(0px);
+        }
+        to {
+            transform: translateY(20px);
+        }
+    }
+}
+

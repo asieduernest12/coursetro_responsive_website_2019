@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="./images/logo.svg" alt="logo image">
+                </div>
+                
+                <div class="nav-btn hide-desktop" id='nav-btn'>
+                    <img src="./images/ham.svg" alt="" class="nav-btn">
+                </div>
+                
+                <nav class="show-desktop hide-mobile" id="navigation-container">
+                    <div class="container">
+                        <div class="links-container">
+                            
+                            <ul class="">
+                                <li id='nav-close' class="hide-desktop">x</li>
+                                <li>home</li>
+                                <li>services</li>
+                                <li>about</li>
+                                <li>contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+        <section>
+            <img src="images/server.svg" alt="server graphic" class="server">
+            
+            <h1>Web Hosting for the Modern Era</h1>
+            <p class="subhead">Go serverless and pay only for what you use.</p>
+            
+            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+    
+    <div class="blue-container">
+        <div class="container">
+            
+                <ul>
+                        <li>
+                            <img src="images/icon-1.svg" alt="Calendar icon">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                        </li>
+                        <li>
+                            <img src="images/icon-2.svg" alt="Calendar icon">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                        </li>
+                        <li>
+                            <img src="images/icon-3.svg" alt="Calendar icon">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                        </li>
+                    </ul>
+        </div>
+    </div>
+    
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/user1.png" alt="User testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                        <figcaption>- Jane Doe</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user2.png" alt="User testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                        <figcaption>- John Doe</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Start your free trial now!</h2>
+        <a href="#" class="cta">Get Started</a>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="images/logo-white.svg" class="logo" alt="logo">
+                </a>
+                <p class="address">Melrose Place, 90210<br>USA</p>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
+
+<script>
+    // alert('scripting');
+    let nav_btn = document.getElementById('nav-btn');
+    let nav_close = document.getElementById('nav-close');
+    let nav = document.getElementById('navigation-container');
+    
+    
+    
+    nav_btn.addEventListener('click',(event) =>{
+        
+        nav.classList.toggle('hide-mobile');
+    });
+    
+    nav_close.addEventListener('click',(event)=>{
+        nav.classList.toggle('hide-mobile');
+        // console.log('closing',event);
+    })
+    
+    nav.addEventListener('blur',function(event) {
+        console.log('bluring');
+        nav.classList.toggle('hide-mobile');
+        
+    })
+    
+</script>
+
